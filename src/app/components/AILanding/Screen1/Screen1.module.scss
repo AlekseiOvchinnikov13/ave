@@ -1,0 +1,102 @@
+@import "../../../styles/variables.module";
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/images/backgrounds/bg-screen1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative;
+  z-index: 1;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: $COLOR_BLACK_50;
+    backdrop-filter: blur(2px);
+  }
+}
+
+.block {
+  border: 2px solid $COLOR_WHITE;
+  background: $COLOR_BLACK_40;
+  width: 57%;
+  display: grid;
+  padding: .025em .0798em;
+  overflow: hidden;
+  
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("/images/backgrounds/assassin.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .title, p, .buttonGo {
+    text-transform: uppercase;
+  }
+  
+  p, .buttonGo {
+    font-weight: 400;
+    color: $COLOR_WHITE;
+    font-family: $FONT_INPUTSANS;
+  }
+  
+  .title {
+    font-size: $FONTSIZE_104;
+    line-height: 96%;
+    font-family: $FONT_DRUK;
+    font-weight: 900;
+    letter-spacing: .02em;
+    text-align: center;
+    
+    background: linear-gradient(207deg, #FFF 29.3%, #5C5A5A 272.11%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  p {
+    font-size: $FONTSIZE_16;
+    line-height: 125%;
+    letter-spacing: -0.8px;
+    text-align: justify;
+    margin-top: 1.5625em;
+  }
+  
+  .buttonGo {
+    font-size: $FONTSIZE_22;
+    margin: 1.136em auto 0;
+    background-color: $COLOR_BLACK;
+    color: $COLOR_WHITE;
+    border: 1px solid $COLOR_WHITE;
+    height: 2.2727em;
+    width: 6.318em;
+    border-radius: 0;
+    transition: all .3s ease;
+    
+    &:hover {
+      background-color: $COLOR_WHITE;
+      border-color: $COLOR_WHITE !important;
+      color: $COLOR_BLACK !important;
+      
+    }
+  }
+}

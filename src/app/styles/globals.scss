@@ -1,0 +1,50 @@
+@import '../../../public/fonts/DrukCyr/stylesheet.css';
+@import '../../../public/fonts/InputSans/stylesheet.css';
+@import 'normalize.css';
+@import 'variables.module';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1920px;
+  font-size: 100vw; //max(100vw, 450px);
+  font-family: $FONT_INPUTSANS;
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+@media (max-width: 575px) {
+
+}
+
