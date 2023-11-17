@@ -1,39 +1,144 @@
 @import "../../../styles/variables.module";
 
-.background {
-  height: 100vh;
-  width: 100vw;
-  background-image: url('/images/backgrounds/bg-screen1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  position: relative;
-  z-index: 1;
   
   &:before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
+    background: transparent;
+    backdrop-filter: blur(0px);
+    transition: all 1s ease-in-out;
+  }
+}
+
+.wrapperShadow {
+  &:before {
+    content: "";
     background: $COLOR_BLACK_50;
     backdrop-filter: blur(2px);
   }
 }
 
+.content {
+  display: grid;
+  grid-template-columns: .4375em .3361em;
+  //grid-template-rows: .3027em;
+  //grid-auto-rows: .1555em;
+  gap: .02638em .06458em;
+}
+
+.description {
+  grid-column: 2;
+  
+  border: 2px solid $COLOR_WHITE;
+  background: $COLOR_BLACK_40;
+  box-shadow: -4px 4px 4px 0 $COLOR_BLACK_50;
+  padding: min(.0225em, 50px);
+  
+  h3, p {
+    color: $COLOR_WHITE;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-family: $FONT_DRUK;
+    font-size: $FONTSIZE_84;
+    font-weight: 900;
+    line-height: 92%;
+    letter-spacing: .02em;
+  }
+  
+  p {
+    font-family: $FONT_INPUTSANS;
+    font-size: $FONTSIZE_16;
+    font-weight: 400;
+    line-height: 1.25em;
+    letter-spacing: -.05em;
+    margin-top: 1.2em;
+    
+    strong {
+      font-weight: 700;
+    }
+  }
+}
+
+.mainTitle {
+  grid-column: 1;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  p, h1, h6 {
+    color: $COLOR_WHITE;
+    font-family: $FONT_DRUK;
+    font-weight: 1000;
+    text-transform: uppercase;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    p {
+      font-size: $FONTSIZE_220;
+    }
+    
+    h1 {
+      font-size: $FONTSIZE_105;
+      line-height: 81%;
+      letter-spacing: .02em;
+      margin-top: .09523em;
+    }
+  }
+  
+  h6 {
+    font-size: $FONTSIZE_35;
+    letter-spacing: .08em;
+    margin-top: -.71428em;
+  }
+}
+
+.timer {
+  grid-column: 2;
+  grid-row: 2;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  
+  p {
+    color: $COLOR_WHITE;
+    font-family: $FONT_DRUK;
+    font-size: $FONTSIZE_84;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .clock {
+    font-size: $FONTSIZE_75;
+    border: 1px solid $COLOR_WHITE;
+    padding: .48em;
+  }
+}
+
+
 .block {
+  position: absolute;
   border: 2px solid $COLOR_WHITE;
   background: $COLOR_BLACK_40;
   width: 57%;
   display: grid;
   padding: .025em .0798em;
   overflow: hidden;
-  
-  position: relative;
   
   &:before {
     content: "";
@@ -60,7 +165,7 @@
   }
   
   .title {
-    font-size: $FONTSIZE_104;
+    font-size: $FONTSIZE_105;
     line-height: 96%;
     font-family: $FONT_DRUK;
     font-weight: 900;
@@ -76,9 +181,9 @@
   p {
     font-size: $FONTSIZE_16;
     line-height: 125%;
-    letter-spacing: -0.8px;
+    letter-spacing: -.05em;
     text-align: justify;
-    margin-top: 1.5625em;
+    margin-top: min(1.5625em, 30px);
   }
   
   .buttonGo {

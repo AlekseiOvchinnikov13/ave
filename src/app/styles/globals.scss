@@ -21,12 +21,11 @@ body, html {
 
 body {
   min-width: 320px;
-  max-width: 1920px;
-  font-size: 100vw; //max(100vw, 450px);
+  font-size: min(100vw, 1920px); //max(100vw, 450px);
   font-family: $FONT_INPUTSANS;
 }
 
-h1, p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -42,6 +41,18 @@ ul, li {
 
 a, button {
   cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  max-width: 1920px;
+  margin: 0 auto;
+  
+  position: relative;
+  z-index: 1;
+  
+  padding: max(40px, .03472em) max(15px, .07222em);
 }
 
 @media (max-width: 575px) {

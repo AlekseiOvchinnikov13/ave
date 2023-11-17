@@ -3,9 +3,13 @@ $COLOR_BLACK_40: rgba(0, 0, 0, 0.40);
 $COLOR_BLACK_50: rgba(0, 0, 0, 0.50);
 $COLOR_WHITE: #fff;
 
-$FONTSIZE_104: max(.07222em);
-$FONTSIZE_22: max(.01527em);
-$FONTSIZE_16: max(.01111em);
+$FONTSIZE_220: min(.15277em, 220px);
+$FONTSIZE_105: min(.07291em, 104px);
+$FONTSIZE_84: min(.05833em, 84px);
+$FONTSIZE_75: min(.05208em, 75px);
+$FONTSIZE_35: min(.02430em, 35px);
+$FONTSIZE_22: min(.01527em, 22px);
+$FONTSIZE_16: min(.01111em, 16px);
 
 
 $FONT_DRUK: 'Druk Cyr', sans-serif;
