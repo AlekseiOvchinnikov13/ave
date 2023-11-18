@@ -1,0 +1,12 @@
+.contentContainer {
+  position: relative;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  
+  padding: max(40px, .03472em) max(15px, .07222em);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

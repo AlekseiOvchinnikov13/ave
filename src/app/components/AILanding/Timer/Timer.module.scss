@@ -1,0 +1,52 @@
+@import '../../../styles/variables.module';
+
+.timer {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  p, a {
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: $COLOR_WHITE;
+    font-family: $FONT_DRUK;
+    font-size: $FONTSIZE_84;
+    font-weight: 900;
+    text-align: center;
+    justify-self: center;
+  }
+  
+  .readyText {
+    align-self: flex-end;
+  }
+  
+  a {
+    place-self: center;
+    
+    font-size: $FONTSIZE_22;
+    font-family: $FONT_INPUTSANS;
+    line-height: 68%;
+    font-weight: 400;
+    color: $COLOR_YELLOW;
+    letter-spacing: .05em;
+    text-align: center;
+    
+    padding: .8181em .6818em;
+    background-color: $COLOR_BLACK;
+    border: 1px solid $COLOR_YELLOW;
+    
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+      color: $COLOR_BLACK;
+      background-color: $COLOR_YELLOW;
+    }
+  }
+  
+  .clock {
+    font-size: $FONTSIZE_75;
+    border: 1px solid $COLOR_WHITE;
+    padding: .48em;
+  }
+}

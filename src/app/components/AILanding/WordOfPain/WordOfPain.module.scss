@@ -1,0 +1,17 @@
+@import '../../../styles/variables.module';
+
+.word {
+  color: $COLOR_WHITE;
+  text-align: center;
+  font-family: $FONT_INPUTSANS;
+  font-size: $FONTSIZE_25;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: -.08em;
+  
+  position: absolute;
+}
+
+
+

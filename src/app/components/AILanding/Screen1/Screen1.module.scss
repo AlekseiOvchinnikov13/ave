@@ -1,15 +1,12 @@
 @import "../../../styles/variables.module";
 
 .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   
   &:before {
     content: "";
     position: absolute;
     inset: 0;
-    z-index: -1;
+    z-index: -2;
     background: transparent;
     backdrop-filter: blur(0px);
     transition: all 1s ease-in-out;
@@ -21,14 +18,13 @@
     content: "";
     background: $COLOR_BLACK_50;
     backdrop-filter: blur(2px);
+    z-index: 0;
   }
 }
 
 .content {
   display: grid;
   grid-template-columns: .4375em .3361em;
-  //grid-template-rows: .3027em;
-  //grid-auto-rows: .1555em;
   gap: .02638em .06458em;
 }
 
@@ -109,27 +105,7 @@
 .timer {
   grid-column: 2;
   grid-row: 2;
-  
-  display: grid;
-  grid-template-columns: 1fr;
-  
-  
-  p {
-    color: $COLOR_WHITE;
-    font-family: $FONT_DRUK;
-    font-size: $FONTSIZE_84;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .clock {
-    font-size: $FONTSIZE_75;
-    border: 1px solid $COLOR_WHITE;
-    padding: .48em;
-  }
 }
-
 
 .block {
   position: absolute;

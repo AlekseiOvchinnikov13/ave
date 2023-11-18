@@ -5,8 +5,11 @@ import {useState} from 'react';
 import Background from '../Background';
 import BgScreen1 from '../../../../../public/images/backgrounds/bg-screen1.jpg';
 import {Button} from 'antd';
+import Timer from '../Timer';
+import ContentContainer from '../ContentContainer';
+import SectionContainer from '../SectionContainer';
 
-const Screen1 = ({setActivePage}) => {
+const Screen1 = () => { //setActivePage
   const [isModalVisible, setIsModalVisible] = useState(true);
   const goHandle = () => {
     setIsModalVisible(false);
@@ -14,12 +17,13 @@ const Screen1 = ({setActivePage}) => {
   };
 
   return (
-    <>
+    <SectionContainer className={`${styles.wrapper} ${isModalVisible ? styles.wrapperShadow : ''}`}>
       <Background
         src={BgScreen1}
         alt={'background1'}
       />
-      <section className={`${styles.wrapper} container ${isModalVisible ? styles.wrapperShadow : ''}`}>
+
+      <ContentContainer>
         {!isModalVisible &&
           <div className={styles.content}>
             <motion.div
@@ -52,17 +56,9 @@ const Screen1 = ({setActivePage}) => {
               <h6>синтез искусства и технологий</h6>
             </motion.div>
 
-            <motion.div
-              className={styles.timer}
-              transition={{ease: 'easeInOut', duration: 1}}
-              initial={{opacity: 0, x: 200}}
-              animate={{opacity: 1, x: 0}}
-            >
-              <p>старт потока</p>
-              <p className={styles.clock}>13 д : 18 ч : 30 м</p>
-            </motion.div>
-          </div>}
-
+            <Timer className={styles.timer}/>
+          </div>
+        }
 
         <AnimatePresence>
           {isModalVisible &&
@@ -87,8 +83,8 @@ const Screen1 = ({setActivePage}) => {
               <Button className={styles.buttonGo} onClick={goHandle}>погнали</Button>
             </motion.div>}
         </AnimatePresence>
-      </section>
-    </>
+      </ContentContainer>
+    </SectionContainer>
   );
 };
 
