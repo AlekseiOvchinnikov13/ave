@@ -18,13 +18,12 @@ const Screen2 = () => {
         src={BgScreen2}
         alt={'background2'}
         quality={50}
-        backgroundColor={'#000'}
       />
       <ContentContainer>
         <div className={styles.wordsContainer}>
           <motion.div
             className={styles.chibikWrapper}
-            initial={{y: -500}}
+            initial={{y: -200}}
             whileInView={{y: 0, rotate: 360}}
             transition={{ease: 'easeInOut', duration: 1.2, type: 'spring'}}
             // viewport={{once: true}}

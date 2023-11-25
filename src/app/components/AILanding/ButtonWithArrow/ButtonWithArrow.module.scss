@@ -1,0 +1,14 @@
+@import '../../../styles/variables.module';
+
+.button {
+  width: 10em;
+  height: 3.42em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: unset;
+  border: 1px solid $COLOR_WHITE;
+  
+  transition: all .3s ease;
+}

@@ -88,7 +88,7 @@
     }
     
     h1 {
-      font-size: $FONTSIZE_105;
+      font-size: $FONTSIZE_104;
       line-height: 81%;
       letter-spacing: .02em;
       margin-top: .09523em;
@@ -130,7 +130,7 @@
     z-index: -1;
   }
   
-  .title, p, .buttonGo {
+  p, .buttonGo {
     text-transform: uppercase;
   }
   
@@ -141,17 +141,8 @@
   }
   
   .title {
-    font-size: $FONTSIZE_105;
-    line-height: 96%;
-    font-family: $FONT_DRUK;
-    font-weight: 900;
-    letter-spacing: .02em;
     text-align: center;
-    
-    background: linear-gradient(207deg, #FFF 29.3%, #5C5A5A 272.11%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    //background: linear-gradient(207deg, #FFF 29.3%, #5C5A5A 272.11%);
   }
   
   p {

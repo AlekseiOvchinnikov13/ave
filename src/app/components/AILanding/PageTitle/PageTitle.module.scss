@@ -1,0 +1,15 @@
+@import '../../../styles/variables.module';
+
+.title {
+  font-family: $FONT_DRUK;
+  font-size: $FONTSIZE_104;
+  font-weight: 900;
+  line-height: 96%;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  
+  background: linear-gradient(154deg, #FFF 73.5%, #5C5A5A 135.53%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,19 +1,88 @@
 $COLOR_BLACK: #000;
 $COLOR_BLACK_40: rgba(0, 0, 0, 0.40);
 $COLOR_BLACK_50: rgba(0, 0, 0, 0.50);
+$COLOR_BLACK_60: rgba(0, 0, 0, 0.60);
 $COLOR_DARK_90: rgba(11, 11, 11, 0.90);
+$COLOR_GREY: #959595;
 $COLOR_WHITE: #fff;
+$COLOR_WHITE_20: rgba(#fff, 0.20);
 $COLOR_YELLOW: #ECFF00;
 
+$BACKGROUND_COLOR_RED_LIGHT: linear-gradient(297deg, #FFF -15.57%, #FF0F00 101.61%);
+$BACKGROUND_COLOR_RED_LIGHT_RIGHT: linear-gradient(98deg, #FF3ED5 -91%, #FF5C00 130.15%);
+
+$BACKGROUND_COLOR_BLUE: linear-gradient(270deg, #A5EFFF 0%, #00CCF9 100%);
+$BACKGROUND_COLOR_BLUE_RIGHT: linear-gradient(270deg, #00CCF9 0%, #A5EFFF 100%);
+
+$BACKGROUND_COLOR_ORANGE: linear-gradient(90deg, #FF2E00 0%, #FFE500 100%);
+$BACKGROUND_COLOR_ORANGE_RIGHT: linear-gradient(90deg, #FFE500 0%, #FF2E00 100%);
+
+$BACKGROUND_COLOR_PINK: linear-gradient(94deg, #FF6A78 -30.48%, #FF75B7 88.14%);
+
+$BACKGROUND_COLOR_PURPLE: linear-gradient(146deg, #E615C5 -46.24%, #A22BFF 102.01%);
+
+$BACKGROUND_COLOR_BLUE2: linear-gradient(91deg, #00D1FF 16.01%, #DA0000 218.79%);
+
+$BACKGROUND_COLOR_PURPLE_LIGHT: linear-gradient(100deg, #B881FF 25.4%, rgba(169, 129, 255, 0.00) 132.79%);
+$BACKGROUND_COLOR_PURPLE_LIGHT_RIGHT: linear-gradient(100deg, #B881FF 25.4%, rgba(169, 129, 255, 0.00) 132.79%), linear-gradient(91deg, #00D1FF 16.01%, #DA0000 218.79%);
+
+$BACKGROUND_COLOR_RED: linear-gradient(93deg, #F00 10.95%, #FFF 99.09%);
+$BACKGROUND_COLOR_RED_RIGHT: linear-gradient(93deg, #FFF 10.95%, #F00 83.23%);
+
+$BACKGROUND_COLOR_YELLOW: linear-gradient(90deg, #FF6B00 -1.25%, #FFE500 104.38%);
+$BACKGROUND_COLOR_YELLOW_RIGHT: linear-gradient(90deg, #FFE500 -1.25%, #FF6B00 65.56%);
+
+
+$COLOR_HIGHLIGHT_RED_LIGHT: #FF6C62;
+$COLOR_HIGHLIGHT_BLUE: #32C7E8;
+$COLOR_HIGHLIGHT_YELLOW: #FFD600;
+$COLOR_HIGHLIGHT_PINK: #FF69B1;
+$COLOR_HIGHLIGHT_YELLOW2: #FFD812;
+$COLOR_HIGHLIGHT_BLUE2: #01D2FF;
+$COLOR_HIGHLIGHT_GREEN: #CAFF31;
+$COLOR_HIGHLIGHT_RED: #F00;
+
 $FONTSIZE_220: min(.15277em, 220px);
-$FONTSIZE_105: min(.07291em, 104px);
+$FONTSIZE_104: min(.07291em, 104px);
 $FONTSIZE_84: min(.05833em, 84px);
 $FONTSIZE_75: min(.05208em, 75px);
+$FONTSIZE_48: min(.03333em, 48px);
 $FONTSIZE_35: min(.02430em, 35px);
 $FONTSIZE_25: min(.01736em, 25px);
 $FONTSIZE_22: min(.01527em, 22px);
 $FONTSIZE_16: min(.01111em, 16px);
 
-
 $FONT_DRUK: 'Druk Cyr', sans-serif;
 $FONT_INPUTSANS: 'InputSansCompressed', sans-serif;
+
+:export {
+  backgroundColorRedLight: $BACKGROUND_COLOR_RED_LIGHT;
+  backgroundColorBlue: $BACKGROUND_COLOR_BLUE;
+  backgroundColorOrange: $BACKGROUND_COLOR_ORANGE;
+  backgroundColorPink: $BACKGROUND_COLOR_PINK;
+  backgroundColorPurple: $BACKGROUND_COLOR_PURPLE;
+  backgroundColorBlue2: $BACKGROUND_COLOR_BLUE2;
+  backgroundColorPurpleLight: $BACKGROUND_COLOR_PURPLE_LIGHT;
+  backgroundColorRed: $BACKGROUND_COLOR_RED;
+  backgroundColorYellow: $BACKGROUND_COLOR_YELLOW;
+  
+  backgroundColorRedLightRight: $BACKGROUND_COLOR_RED_LIGHT_RIGHT;
+  backgroundColorBlueRight: $BACKGROUND_COLOR_BLUE_RIGHT;
+  backgroundColorOrangeRight: $BACKGROUND_COLOR_ORANGE_RIGHT;
+  backgroundColorPurpleLightRight: $BACKGROUND_COLOR_PURPLE_LIGHT_RIGHT;
+  backgroundColorRedRight: $BACKGROUND_COLOR_RED_RIGHT;
+  backgroundColorYellowRight: $BACKGROUND_COLOR_YELLOW_RIGHT;
+  
+  colorHighlightRedLight: $COLOR_HIGHLIGHT_RED_LIGHT;
+  colorHighlightBlue: $COLOR_HIGHLIGHT_BLUE;
+  colorHighlightYellow: $COLOR_HIGHLIGHT_YELLOW;
+  colorHighlightPink: $COLOR_HIGHLIGHT_PINK;
+  colorHighlightYellow2: $COLOR_HIGHLIGHT_YELLOW2;
+  colorHighlightBlue2: $COLOR_HIGHLIGHT_BLUE2;
+  colorHighlightGreen: $COLOR_HIGHLIGHT_GREEN;
+  colorHighlightRed: $COLOR_HIGHLIGHT_RED;
+  
+  colorWhite: $COLOR_WHITE;
+  colorWhite20: $COLOR_WHITE_20;
+  colorGrey: $COLOR_GREY;
+}

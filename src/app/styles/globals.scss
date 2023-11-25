@@ -23,6 +23,7 @@ body {
   min-width: 320px;
   font-size: min(100vw, 1920px); //max(100vw, 450px);
   font-family: $FONT_INPUTSANS;
+  background-color: $COLOR_BLACK;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -41,12 +42,6 @@ ul, li {
 
 a, button {
   cursor: pointer;
-}
-
-.container {
-  
-  
-
 }
 
 @media (max-width: 575px) {

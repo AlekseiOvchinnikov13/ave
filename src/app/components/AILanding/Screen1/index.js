@@ -8,6 +8,7 @@ import {Button} from 'antd';
 import Timer from '../Timer';
 import ContentContainer from '../ContentContainer';
 import SectionContainer from '../SectionContainer';
+import PageTitle from '../PageTitle';
 
 const Screen1 = () => { //setActivePage
   const [isModalVisible, setIsModalVisible] = useState(true);
@@ -69,7 +70,7 @@ const Screen1 = () => { //setActivePage
               initial={{opacity: 0, y: 500}}
               exit={{opacity: 0, y: -500, position: 'absolute'}}
             >
-              <h6 className={styles.title}>внимание</h6>
+              <PageTitle className={styles.title} text={'внимание'}/>
               <p>Курс создан не&nbsp;рандомными людьми или блогерами живущих ради наживы, <strong>Это обучение
                 разработала
                 команда, которая более 5&nbsp;лет работает с&nbsp;крупными брендами и&nbsp;известными
