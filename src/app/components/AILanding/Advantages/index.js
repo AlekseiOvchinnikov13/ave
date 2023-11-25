@@ -88,7 +88,7 @@ const Advantages = () => {
       <div className={styles.descriptionContainer}>
         <div className={styles.textContainer}>
           {activeData && activeData.description.map(paragraph =>
-            <p dangerouslySetInnerHTML={{__html: paragraph}}/>
+            <p key={uuid()} dangerouslySetInnerHTML={{__html: paragraph}}/>
           )}
         </div>
         <div className={styles.buttonsContainer}>
