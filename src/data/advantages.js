@@ -69,7 +69,7 @@ export const imagesAdvantages = [
   {
     src: Adv9,
     zIndex: 1
-  },
+  }
 ];
 
 
