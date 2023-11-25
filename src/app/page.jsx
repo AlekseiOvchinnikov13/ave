@@ -20,6 +20,7 @@ export default function AILanding() {
         pageOnChange={number => handlePageChange(number)}
       >
         <Screen1 setActivePage={setActivePage}/>
+
         <Screen2/>
         <Screen3/>
         <Screen5/>
