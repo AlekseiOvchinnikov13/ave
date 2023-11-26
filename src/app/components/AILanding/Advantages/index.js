@@ -100,6 +100,7 @@ const Advantages = () => {
             onMouseLeave={() => handleMouseLeave('button1')}
             directionLeft
           />
+          <p>{`${activeButtonIndex + 1} / ${listAdvantages.length}`}</p>
           <ButtonWithArrow
             className={styles.button}
             style={{background: isHovered.button2 ? activeData?.backgroundRight : colorWhite20}}
