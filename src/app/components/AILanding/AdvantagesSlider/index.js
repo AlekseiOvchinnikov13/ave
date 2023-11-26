@@ -18,6 +18,8 @@ const AdvantagesSlider = ({imageIndex}) => {
         <Image
           src={imagesAdvantages[imageIndex].src}
           fill
+          priority
+          quality={100}
           alt={`image ${imageIndex}`}
         />
       </motion.div>
