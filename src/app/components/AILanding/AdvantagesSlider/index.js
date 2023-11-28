@@ -19,6 +19,7 @@ const AdvantagesSlider = ({imageIndex}) => {
           src={imagesAdvantages[imageIndex].src}
           fill
           priority
+          objectFit={'cover'}
           quality={100}
           alt={`image ${imageIndex}`}
         />

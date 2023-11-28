@@ -42,15 +42,15 @@ $COLOR_HIGHLIGHT_BLUE2: #01D2FF;
 $COLOR_HIGHLIGHT_GREEN: #CAFF31;
 $COLOR_HIGHLIGHT_RED: #F00;
 
-$FONTSIZE_220: min(.15277em, 220px);
-$FONTSIZE_104: min(.07291em, 104px);
-$FONTSIZE_84: min(.05833em, 84px);
-$FONTSIZE_75: min(.05208em, 75px);
-$FONTSIZE_48: min(.03333em, 48px);
-$FONTSIZE_35: min(.02430em, 35px);
-$FONTSIZE_25: min(.01736em, 25px);
-$FONTSIZE_22: min(.01527em, 22px);
-$FONTSIZE_16: min(.01111em, 16px);
+$FONTSIZE_220: min(.15277em); //, 220px
+$FONTSIZE_104: min(.07291em); //, 104px
+$FONTSIZE_84: min(.05833em); //, 84px
+$FONTSIZE_75: min(.05208em); //, 75px
+$FONTSIZE_48: min(.03333em); //, 48px
+$FONTSIZE_35: min(.02430em); //, 35px
+$FONTSIZE_25: min(.01736em); //, 25px
+$FONTSIZE_22: min(.01527em); //, 22px
+$FONTSIZE_16: min(.01111em); //, 16px
 
 $FONT_DRUK: 'Druk Cyr', sans-serif;
 $FONT_INPUTSANS: 'InputSansCompressed', sans-serif;

@@ -10,11 +10,10 @@ import ContentContainer from '../ContentContainer';
 import SectionContainer from '../SectionContainer';
 import PageTitle from '../PageTitle';
 
-const Screen1 = () => { //setActivePage
+const Screen1 = () => {
   const [isModalVisible, setIsModalVisible] = useState(true);
   const goHandle = () => {
     setIsModalVisible(false);
-    // setActivePage(1);
   };
 
   return (

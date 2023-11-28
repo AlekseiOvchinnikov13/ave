@@ -14,6 +14,7 @@ const Advantages = () => {
   const [isHovered, setIsHovered] = useState({button1: false, button2: false});
   const [activeData, setActiveData] = useState(null);
   const buttonRef = useRef(null);
+  const containerRef = useRef(null);
 
   const handleMouseEnter = (button) => {
     setIsHovered((prevState) => ({
@@ -39,18 +40,24 @@ const Advantages = () => {
   }, [activeButtonIndex]);
 
   const handleButtonClick = (index) => {
-    if (!buttonRef.current) return;
+    if (!buttonRef.current || !containerRef.current) return;
     if (index > listAdvantages.length - 1 || index < 0) return;
+
     const buttonHeight = buttonRef.current.clientHeight;
+    const containerHeight = containerRef.current.offsetParent.clientHeight;
     setActiveButtonIndex(index);
     setScrollPosition(index * buttonHeight);
 
     if (index < 3) {
       setScrollPositionContainer(0);
-    } else if (index > 5) {
-      setScrollPositionContainer(buttonHeight * 4);
-    } else if (index >= 3 && index <= 5) {
-      setScrollPositionContainer(buttonHeight * (index - 2));
+    } else if (index >= listAdvantages.length - 3) {
+      const lastButtonsHeight = buttonHeight * (listAdvantages.length - 3);
+      const extraButtonsHeight = (containerHeight / buttonHeight - 3) * buttonHeight;
+      setScrollPositionContainer(lastButtonsHeight - extraButtonsHeight);
+    } else {
+      const middleButtonsHeight = buttonHeight * index;
+      const extraButtonsHeight = (containerHeight / buttonHeight / 2) * buttonHeight;
+      setScrollPositionContainer(middleButtonsHeight - extraButtonsHeight);
     }
   };
 
@@ -60,6 +67,7 @@ const Advantages = () => {
         <div
           className={styles.advantagesItemsContainer}
           style={{transform: `translateY(-${scrollPositionContainer}px)`}}
+          ref={containerRef}
         >
           {listAdvantages.map((adv, index) =>
             <button
