@@ -1,0 +1,64 @@
+@import '../../../styles/variables.module';
+
+.container {
+  display: grid;
+  grid-template-columns: 2.5fr 5fr;
+}
+
+.textContainer {
+  align-self: flex-start;
+  text-transform: uppercase;
+  
+  h5 {
+    font-family: $FONT_DRUK;
+    font-size: $FONTSIZE_48;
+    color: $COLOR_BLACK;
+    font-weight: 900;
+    line-height: 104%;
+    letter-spacing: .02em;
+    
+    padding: .75em;
+    //border: 2px solid $COLOR_BLACK;
+    background-color: $COLOR_WHITE;
+    box-shadow: -4px 4px 4px 0px $COLOR_BLACK_50;
+    
+    background-image: url("/images/backgrounds/economist.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .description {
+    padding: .0243em;
+    border: 1px solid $COLOR_WHITE;
+    background: $COLOR_BLACK;
+    box-shadow: -4px 4px 4px 0px $COLOR_BLACK_50;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  p {
+    font-family: $FONT_INPUTSANS;
+    font-size: $FONTSIZE_16;
+    color: $COLOR_WHITE;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -.05em;
+    text-align: justify;
+    
+    span {
+      font-weight: 700;
+    }
+  }
+  
+  p + p {
+    margin-top: 1.5625em;
+  }
+}
+
+
+
+

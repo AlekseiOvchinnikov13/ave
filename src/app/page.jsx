@@ -6,6 +6,7 @@ import Screen2 from './components/AILanding/Screen2';
 import {useState} from 'react';
 import Screen5 from './components/AILanding/Screen5';
 import Screen3 from './components/AILanding/Screen3';
+import Screen6 from './components/AILanding/Screen6';
 
 export default function AILanding() {
   const [activePage, setActivePage] = useState(0);
@@ -20,10 +21,10 @@ export default function AILanding() {
         pageOnChange={number => handlePageChange(number)}
       >
         <Screen1 setActivePage={setActivePage}/>
-
         <Screen2/>
         <Screen3/>
         <Screen5/>
+        <Screen6/>
       </ReactPageScroller>
     </main>
   );
