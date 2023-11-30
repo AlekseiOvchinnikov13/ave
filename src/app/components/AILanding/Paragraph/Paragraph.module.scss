@@ -1,0 +1,18 @@
+@import '../../../styles/variables.module';
+
+.paragraph {
+  font-family: $FONT_INPUTSANS;
+  font-size: $FONTSIZE_16;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: -0.05em;
+  color: $COLOR_WHITE;
+  text-transform: uppercase;
+  text-align: justify;
+  
+  margin-top: 1.5625em;
+  
+  strong {
+    font-weight: 700;
+  }
+}

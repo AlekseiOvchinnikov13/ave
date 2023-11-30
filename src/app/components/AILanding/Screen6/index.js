@@ -3,6 +3,7 @@ import BgScreen6 from '../../../../../public/images/backgrounds/bg-screen6.jpg';
 import Background from '../Background';
 import SectionContainer from '../SectionContainer';
 import ContentContainer from '../ContentContainer';
+import Paragraph from '../Paragraph';
 
 
 const Screen6 = () => {
@@ -17,14 +18,16 @@ const Screen6 = () => {
         <div className={styles.textContainer}>
           <h5>Работа с деталями и окружением</h5>
           <div className={styles.description}>
-            <p>Никогда еще не&nbsp;было так комфортно и&nbsp;вариативно работать с&nbsp;изображением, как сейчас.</p>
-            <p>
-              <span>Теперь у&nbsp;тебя есть дополнительный инструмент</span> для <span>достижения результата.</span>
-            </p>
-            <p>
+            <Paragraph>
+              Никогда еще не&nbsp;было так комфортно и&nbsp;вариативно работать с&nbsp;изображением, как сейчас.
+            </Paragraph>
+            <Paragraph>
+              <strong>Теперь у&nbsp;тебя есть дополнительный инструмент</strong> для <strong>достижения результата.</strong>
+            </Paragraph>
+            <Paragraph>
               Работа с&nbsp;текстурой, корректировка и&nbsp;видоизменение элементов, работа
-              с&nbsp;бэкграундом&nbsp;&mdash; <span>все это открывает для тебя новые возможности.</span>
-            </p>
+              с&nbsp;бэкграундом&nbsp;&mdash; <strong>все это открывает для тебя новые возможности.</strong>
+            </Paragraph>
           </div>
         </div>
       </ContentContainer>

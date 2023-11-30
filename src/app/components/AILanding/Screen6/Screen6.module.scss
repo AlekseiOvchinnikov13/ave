@@ -18,7 +18,6 @@
     letter-spacing: .02em;
     
     padding: .75em;
-    //border: 2px solid $COLOR_BLACK;
     background-color: $COLOR_WHITE;
     box-shadow: -4px 4px 4px 0px $COLOR_BLACK_50;
     
@@ -38,24 +37,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  p {
-    font-family: $FONT_INPUTSANS;
-    font-size: $FONTSIZE_16;
-    color: $COLOR_WHITE;
-    font-weight: 400;
-    line-height: 125%;
-    letter-spacing: -.05em;
-    text-align: justify;
     
-    span {
-      font-weight: 700;
+    p:first-child {
+      margin-top: 0;
     }
-  }
-  
-  p + p {
-    margin-top: 1.5625em;
   }
 }
 

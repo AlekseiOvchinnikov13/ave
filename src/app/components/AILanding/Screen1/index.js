@@ -9,6 +9,7 @@ import Timer from '../Timer';
 import ContentContainer from '../ContentContainer';
 import SectionContainer from '../SectionContainer';
 import PageTitle from '../PageTitle';
+import Paragraph from '../Paragraph';
 
 const Screen1 = () => {
   const [isModalVisible, setIsModalVisible] = useState(true);
@@ -33,14 +34,16 @@ const Screen1 = () => {
               animate={{opacity: 1, x: 0}}
             >
               <h3>кому это подойдет</h3>
-              <p>
+              <Paragraph>
                 <strong>Абсолютно каждому</strong>, будь ты&nbsp;диджитал-художником или работягой с&nbsp;завода.
-              </p>
-              <p>Всем, кто стремится оставаться в&nbsp;курсе последних тенденций, хочет развивать свои навыки, улучшить
+              </Paragraph>
+              <Paragraph>
+                Всем, кто стремится оставаться в&nbsp;курсе последних тенденций, хочет развивать свои навыки, улучшить
                 и&nbsp;ускорить свой рабочий процесс. Каждому, кто хочет найти ответы на&nbsp;важные вопросы,
                 погрузиться
-                в&nbsp;мир нейронных сетей, да&nbsp;и&nbsp;просто научиться новому.</p>
-              <p><strong>Уровень скилла не&nbsp;имеет значения.</strong></p>
+                в&nbsp;мир нейронных сетей, да&nbsp;и&nbsp;просто научиться новому.
+              </Paragraph>
+              <Paragraph><strong>Уровень скилла не&nbsp;имеет значения.</strong></Paragraph>
             </motion.div>
 
             <motion.div
@@ -70,16 +73,20 @@ const Screen1 = () => {
               exit={{opacity: 0, y: -500, position: 'absolute'}}
             >
               <PageTitle className={styles.title} text={'внимание'}/>
-              <p>Курс создан не&nbsp;рандомными людьми или блогерами живущих ради наживы, <strong>Это обучение
-                разработала
-                команда, которая более 5&nbsp;лет работает с&nbsp;крупными брендами и&nbsp;известными
+              <Paragraph>
+                Курс создан не&nbsp;рандомными людьми или блогерами живущих ради наживы, <strong>Это обучение
+                разработала команда, которая более 5&nbsp;лет работает с&nbsp;крупными брендами и&nbsp;известными
                 артистами.</strong>
-              </p>
-              <p>Сразу&nbsp;&mdash; Кнопки &laquo;Пиздато&raquo; не&nbsp;существует, как
+              </Paragraph>
+              <Paragraph>
+                Сразу&nbsp;&mdash; Кнопки &laquo;Пиздато&raquo; не&nbsp;существует, как
                 и&nbsp;AI&nbsp;&mdash; не&nbsp;панацея, или полноценная замена, но&nbsp;отличный инструмент для твоего
-                фундамента в&nbsp;профессии.</p>
-              <p>Если ты&nbsp;готов превозмогать, учиться и&nbsp;не&nbsp;искать себе оправданий, то&nbsp;найдешь ответы
-                на&nbsp;многие вопросы.</p>
+                фундамента в&nbsp;профессии.
+              </Paragraph>
+              <Paragraph>
+                Если ты&nbsp;готов превозмогать, учиться и&nbsp;не&nbsp;искать себе оправданий, то&nbsp;найдешь ответы
+                на&nbsp;многие вопросы.
+              </Paragraph>
               <Button className={styles.buttonGo} onClick={goHandle}>погнали</Button>
             </motion.div>}
         </AnimatePresence>

@@ -6,6 +6,7 @@ import uuid from 'react-uuid';
 import {useEffect, useRef, useState} from 'react';
 import ButtonWithArrow from '../ButtonWithArrow';
 import AdvantagesSlider from '../AdvantagesSlider';
+import Paragraph from '../Paragraph';
 
 const Advantages = () => {
   const [scrollPositionContainer, setScrollPositionContainer] = useState(0);
@@ -96,7 +97,7 @@ const Advantages = () => {
       <div className={styles.descriptionContainer}>
         <div className={styles.textContainer}>
           {activeData && activeData.description.map(paragraph =>
-            <p key={uuid()} dangerouslySetInnerHTML={{__html: paragraph}}/>
+            <Paragraph key={uuid()} innerHTML={paragraph}/>
           )}
         </div>
         <div className={styles.buttonsContainer}>
@@ -108,7 +109,7 @@ const Advantages = () => {
             onMouseLeave={() => handleMouseLeave('button1')}
             directionLeft
           />
-          <p>{`${activeButtonIndex + 1} / ${listAdvantages.length}`}</p>
+          <Paragraph>{`${activeButtonIndex + 1} / ${listAdvantages.length}`}</Paragraph>
           <ButtonWithArrow
             className={styles.button}
             style={{background: isHovered.button2 ? activeData?.backgroundRight : colorWhite20}}

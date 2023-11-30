@@ -96,21 +96,14 @@
     
     border: 1px solid $COLOR_WHITE;
     padding: .025em;
-  }
-  
-  p {
-    font-family: $FONT_INPUTSANS;
-    font-size: $FONTSIZE_16;
-    font-weight: 500;
-    letter-spacing: .05em;
-    line-height: 125%;
-    text-transform: uppercase;
-    color: $COLOR_WHITE;
-    text-align: justify;
-  }
-  
-  p + p {
-    margin-top: 1.5625em;
+    
+    p {
+      font-weight: 500;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
   
   ul {

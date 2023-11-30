@@ -45,20 +45,5 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
-  p {
-    color: $COLOR_WHITE;
-    font-family: $FONT_INPUTSANS;
-    font-size: $FONTSIZE_16;
-    font-weight: 400;
-    letter-spacing: -.05em;
-    line-height: 125%;
-    
-    margin-top: min(1.5625em, 30px);
-    
-    strong {
-      font-weight: 700;
-    }
-  }
 }
 
