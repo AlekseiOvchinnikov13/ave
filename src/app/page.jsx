@@ -8,6 +8,7 @@ import Screen5 from './components/AILanding/Screen5';
 import Screen3 from './components/AILanding/Screen3';
 import Screen6 from './components/AILanding/Screen6';
 import Screen7 from './components/AILanding/Screen7';
+import Screen8 from './components/AILanding/Screen8';
 
 export default function AILanding() {
   const [activePage, setActivePage] = useState(0);
@@ -27,6 +28,7 @@ export default function AILanding() {
         <Screen5/>
         <Screen6/>
         <Screen7/>
+        <Screen8/>
       </ReactPageScroller>
     </main>
   );

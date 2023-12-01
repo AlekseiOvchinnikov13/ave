@@ -1,38 +1,45 @@
 'use client';
-
 import styles from './Timer.module.scss';
 import {motion} from 'framer-motion';
-import {useEffect, useState} from 'react';
+import {useEffect, useMemo, useState} from 'react';
+
+const calculateTimeRemaining = (targetDate) => {
+  const now = new Date().getTime();
+  const difference = targetDate - now;
+
+  if (difference > 0) {
+    const time = {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+      seconds: Math.floor((difference % (1000 * 60)) / 1000),
+    };
+    return `${time.days} д : ${time.hours} ч : ${time.minutes} м`;
+  } else {
+    return '';
+  }
+};
 
 const Timer = ({className}) => {
-  const calculateTimeRemaining = (targetDate) => {
-    const now = new Date().getTime();
-    const difference = targetDate - now;
-
-    if (difference > 0) {
-      const time = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((difference % (1000 * 60)) / 1000),
-      };
-      return `${time.days} д : ${time.hours} ч : ${time.minutes} м`;
-    } else {
-      return '';
-    }
-  };
-
-  const targetDate = new Date('2023-11-29T10:00:00');
-  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining(targetDate));
-
+  const targetDate = new Date('2023-12-05T14:00:00');
+  const timeRemaining = useMemo(() => calculateTimeRemaining(targetDate), [targetDate]);
+  const [_, setDisplayTimer] = useState(true);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining(targetDate));
-    }, 1000);
-
+    let timer;
+    if (timeRemaining) {
+      timer = setInterval(() => {
+        setDisplayTimer((prevDisplayTimer) => {
+          if (!calculateTimeRemaining(targetDate)) {
+            clearInterval(timer);
+            return false;
+          }
+          return prevDisplayTimer;
+        });
+      }, 1000);
+    }
     return () => clearInterval(timer);
-  }, [targetDate]);
+  }, [timeRemaining, targetDate]);
 
   return (
     <motion.div

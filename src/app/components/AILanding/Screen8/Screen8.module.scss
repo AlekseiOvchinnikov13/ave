@@ -1,0 +1,27 @@
+@import '../../../styles/variables.module';
+
+.container {
+
+}
+
+.youtube {
+  width: .6875em;
+  height: .3888em;
+  border: none;
+  
+}
+
+.text {
+  font-family: $FONT_INPUTSANS;
+  color: $COLOR_WHITE;
+  font-size: $FONTSIZE_20;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+  letter-spacing: .08em;
+  
+  position: absolute;
+  bottom: 85%;
+}
+
+
