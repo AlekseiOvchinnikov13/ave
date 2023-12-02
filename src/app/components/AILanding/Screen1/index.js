@@ -29,7 +29,7 @@ const Screen1 = () => {
           <div className={styles.content}>
             <motion.div
               className={styles.description}
-              transition={{ease: 'easeInOut', duration: 1}}
+              transition={{ease: 'easeInOut', duration: .5}}
               initial={{opacity: 0, x: 100}}
               animate={{opacity: 1, x: 0}}
             >
@@ -48,7 +48,7 @@ const Screen1 = () => {
 
             <motion.div
               className={styles.mainTitle}
-              transition={{ease: 'easeInOut', duration: 1.5}}
+              transition={{ease: 'easeInOut', duration: 1}}
               initial={{opacity: 0}}
               animate={{opacity: 1}}
             >
@@ -68,7 +68,7 @@ const Screen1 = () => {
             <motion.div
               className={styles.block}
               animate={{opacity: 1, y: 0}}
-              transition={{ease: 'easeInOut', duration: 1}}
+              transition={{ease: 'easeInOut', duration: 0.5}}
               initial={{opacity: 0, y: 500}}
               exit={{opacity: 0, y: -500, position: 'absolute'}}
             >

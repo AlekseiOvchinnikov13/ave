@@ -44,7 +44,7 @@ const Timer = ({className}) => {
   return (
     <motion.div
       className={`${styles.timer} ${className}`}
-      transition={{ease: 'easeInOut', duration: 1}}
+      transition={{ease: 'easeInOut', duration: .6}}
       initial={{opacity: 0, x: 200}}
       animate={{opacity: 1, x: 0}}
     >

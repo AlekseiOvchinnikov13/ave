@@ -16,10 +16,10 @@ const Screen8 = () => {
       />
       <ContentContainer className={styles.container}>
 
-        <iframe className={styles.youtube} src={youtubeLink} title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen>
-
+        <iframe
+          className={styles.youtube} src={youtubeLink} title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen>
         </iframe>
         <p className={styles.text}>Поиск и разработка текстур стала намного доступнее и вариативнее.</p>
 
