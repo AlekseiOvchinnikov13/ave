@@ -21,13 +21,10 @@ const Screen6 = () => {
             <Paragraph>
               Никогда еще не&nbsp;было так комфортно и&nbsp;вариативно работать с&nbsp;изображением, как сейчас.
             </Paragraph>
-            <Paragraph>
-              <strong>Теперь у&nbsp;тебя есть дополнительный инструмент</strong> для <strong>достижения результата.</strong>
-            </Paragraph>
-            <Paragraph>
-              Работа с&nbsp;текстурой, корректировка и&nbsp;видоизменение элементов, работа
-              с&nbsp;бэкграундом&nbsp;&mdash; <strong>все это открывает для тебя новые возможности.</strong>
-            </Paragraph>
+            <Paragraph
+              innerHTML={`<strong>Теперь у&nbsp;тебя есть дополнительный инструмент</strong> для <strong>достижения результата.</strong>`}/>
+            <Paragraph innerHTML={`Работа с&nbsp;текстурой, корректировка и&nbsp;видоизменение элементов, работа
+              с&nbsp;бэкграундом&nbsp;&mdash; <strong>все это открывает для тебя новые возможности.</strong>`}/>
           </div>
         </div>
       </ContentContainer>

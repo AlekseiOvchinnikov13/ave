@@ -34,16 +34,15 @@ const Screen1 = () => {
               animate={{opacity: 1, x: 0}}
             >
               <h3>кому это подойдет</h3>
-              <Paragraph>
-                <strong>Абсолютно каждому</strong>, будь ты&nbsp;диджитал-художником или работягой с&nbsp;завода.
-              </Paragraph>
+              <Paragraph
+                innerHTML={`<strong>Абсолютно каждому</strong>, будь ты&nbsp;диджитал-художником или работягой с&nbsp;завода.`}
+              />
               <Paragraph>
                 Всем, кто стремится оставаться в&nbsp;курсе последних тенденций, хочет развивать свои навыки, улучшить
                 и&nbsp;ускорить свой рабочий процесс. Каждому, кто хочет найти ответы на&nbsp;важные вопросы,
-                погрузиться
-                в&nbsp;мир нейронных сетей, да&nbsp;и&nbsp;просто научиться новому.
+                погрузиться в&nbsp;мир нейронных сетей, да&nbsp;и&nbsp;просто научиться новому.
               </Paragraph>
-              <Paragraph><strong>Уровень скилла не&nbsp;имеет значения.</strong></Paragraph>
+              <Paragraph innerHTML={`<strong>Уровень скилла не&nbsp;имеет значения.</strong>`}/>
             </motion.div>
 
             <motion.div
@@ -73,11 +72,11 @@ const Screen1 = () => {
               exit={{opacity: 0, y: -500, position: 'absolute'}}
             >
               <PageTitle className={styles.title} text={'внимание'}/>
-              <Paragraph>
-                Курс создан не&nbsp;рандомными людьми или блогерами живущих ради наживы, <strong>Это обучение
+              <Paragraph
+                innerHTML={`Курс создан не&nbsp;рандомными людьми или блогерами живущих ради наживы, <strong>Это обучение
                 разработала команда, которая более 5&nbsp;лет работает с&nbsp;крупными брендами и&nbsp;известными
-                артистами.</strong>
-              </Paragraph>
+                артистами.</strong>`}
+              />
               <Paragraph>
                 Сразу&nbsp;&mdash; Кнопки &laquo;Пиздато&raquo; не&nbsp;существует, как
                 и&nbsp;AI&nbsp;&mdash; не&nbsp;панацея, или полноценная замена, но&nbsp;отличный инструмент для твоего
