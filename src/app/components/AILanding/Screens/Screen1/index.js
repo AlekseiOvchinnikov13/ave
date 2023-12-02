@@ -2,14 +2,14 @@
 import styles from './Screen1.module.scss';
 import {AnimatePresence, motion} from 'framer-motion';
 import {useState} from 'react';
-import Background from '../Background';
-import BgScreen1 from '../../../../../public/images/backgrounds/bg-screen1.jpg';
+import Background from '../../Background';
+import BgScreen1 from '../../../../../../public/images/backgrounds/bg-screen1.jpg';
 import {Button} from 'antd';
-import Timer from '../Timer';
-import ContentContainer from '../ContentContainer';
-import SectionContainer from '../SectionContainer';
-import PageTitle from '../PageTitle';
-import Paragraph from '../Paragraph';
+import Timer from '../../Timer';
+import ContentContainer from '../../ContentContainer';
+import SectionContainer from '../../SectionContainer';
+import PageTitle from '../../PageTitle';
+import Paragraph from '../../Paragraph';
 
 const Screen1 = () => {
   const [isModalVisible, setIsModalVisible] = useState(true);

@@ -1,9 +1,9 @@
-import Background from '../Background';
-import BgScreen5 from '../../../../../public/images/backgrounds/bg-screen5.jpg';
-import SectionContainer from '../SectionContainer';
-import ContentContainer from '../ContentContainer';
+import Background from '../../Background';
+import BgScreen5 from '../../../../../../public/images/backgrounds/bg-screen5.jpg';
+import SectionContainer from '../../SectionContainer';
+import ContentContainer from '../../ContentContainer';
 import styles from './Screen5.module.scss';
-import Paragraph from '../Paragraph';
+import Paragraph from '../../Paragraph';
 
 const Screen5 = () => {
   return (

@@ -1,8 +1,8 @@
 import styles from './Screen3.module.scss';
-import SectionContainer from '../SectionContainer';
-import ContentContainer from '../ContentContainer';
-import PageTitle from '../PageTitle';
-import Advantages from '../Advantages';
+import SectionContainer from '../../SectionContainer';
+import ContentContainer from '../../ContentContainer';
+import PageTitle from '../../PageTitle';
+import Advantages from '../../Advantages';
 
 const Screen3 = () => {
   return (

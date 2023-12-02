@@ -1,8 +1,8 @@
 import styles from './Screen8.module.scss';
-import Background from '../Background';
-import BgScreen8 from '../../../../../public/images/backgrounds/bg-screen8.jpg';
-import ContentContainer from '../ContentContainer';
-import SectionContainer from '../SectionContainer';
+import Background from '../../Background';
+import BgScreen8 from '../../../../../../public/images/backgrounds/bg-screen8.jpg';
+import ContentContainer from '../../ContentContainer';
+import SectionContainer from '../../SectionContainer';
 
 const youtubeLink = 'https://www.youtube.com/embed/FGK6SUWZVwo?si=-9VIp22rLAw86v4c';
 

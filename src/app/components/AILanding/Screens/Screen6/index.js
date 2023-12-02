@@ -1,9 +1,9 @@
 import styles from './Screen6.module.scss';
-import BgScreen6 from '../../../../../public/images/backgrounds/bg-screen6.jpg';
-import Background from '../Background';
-import SectionContainer from '../SectionContainer';
-import ContentContainer from '../ContentContainer';
-import Paragraph from '../Paragraph';
+import BgScreen6 from '../../../../../../public/images/backgrounds/bg-screen6.jpg';
+import Background from '../../Background';
+import SectionContainer from '../../SectionContainer';
+import ContentContainer from '../../ContentContainer';
+import Paragraph from '../../Paragraph';
 
 
 const Screen6 = () => {

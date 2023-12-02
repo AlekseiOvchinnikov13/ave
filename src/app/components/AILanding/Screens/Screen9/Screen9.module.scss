@@ -1,0 +1,36 @@
+@import '../../../../styles/variables.module';
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+.description {
+  grid-column: 1;
+  
+  place-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: .025em;
+  border: 1px solid $COLOR_WHITE;
+  background: $COLOR_BLACK_10;
+  
+  p {
+    color: $COLOR_PINK;
+    font-weight: 700;
+  }
+  
+  ul {
+    font-family: $FONT_INPUTSANS;
+    font-size: $FONTSIZE_16;
+    line-height: 125%;
+    color: $COLOR_WHITE;
+    font-weight: 400;
+    padding-left: .625em;
+  }
+  
+  li {
+    list-style-type: '-';
+  }
+}
+
