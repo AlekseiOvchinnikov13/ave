@@ -4,10 +4,8 @@ const Paragraph = ({children, innerHTML}) => {
   return (
     <p
       className={styles.paragraph}
-      dangerouslySetInnerHTML={{__html: innerHTML}}
-    >
-      {children}
-    </p>
+      dangerouslySetInnerHTML={{__html: children ? children : innerHTML}}
+    />
   );
 };
 

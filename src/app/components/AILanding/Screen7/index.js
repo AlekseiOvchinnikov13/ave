@@ -33,7 +33,7 @@ const Screen7 = () => {
             src={SenshiBg}
             alt={'senshi'}
             fill
-            objectFit={'contain'}
+            style={{objectFit: 'contain'}}
           />
         </motion.div>
         <div className={styles.description}>

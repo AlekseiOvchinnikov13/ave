@@ -20,9 +20,10 @@ const calculateTimeRemaining = (targetDate) => {
   }
 };
 
+const targetDate = new Date('2023-12-02T14:00:00');
+
 const Timer = ({className}) => {
-  const targetDate = new Date('2023-12-05T14:00:00');
-  const timeRemaining = useMemo(() => calculateTimeRemaining(targetDate), [targetDate]);
+  const timeRemaining = useMemo(() => calculateTimeRemaining(targetDate), []);
   const [_, setDisplayTimer] = useState(true);
 
   useEffect(() => {
@@ -39,7 +40,7 @@ const Timer = ({className}) => {
       }, 1000);
     }
     return () => clearInterval(timer);
-  }, [timeRemaining, targetDate]);
+  }, [timeRemaining]);
 
   return (
     <motion.div
@@ -58,9 +59,7 @@ const Timer = ({className}) => {
           <a href={'/#rates'}>к тарифам</a>
         </>}
     </motion.div>
-  )
-    ;
-
+  );
 };
 
 

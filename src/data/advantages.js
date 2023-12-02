@@ -98,7 +98,7 @@ export const listAdvantages = [
     backgroundRight: backgroundColorOrangeRight,
     description: [
       `В&nbsp;курсе подробно разобраны <span style='color: ${colorHighlightYellow}'>актуальные приложения</span> и&nbsp;принципы работы с&nbsp;ними. Софта очень много, поэтому выбрали&nbsp;то, что <span style='color: ${colorHighlightYellow}'>реально работает</span>. Также расскажем, что делать тем, у&nbsp;кого <span style='color: ${colorHighlightYellow}'>слабое железо</span> или <span style='color: ${colorHighlightYellow}'>mac OS</span>.`,
-      `Все проверено на&nbsp;практике.`,
+      'Все проверено на&nbsp;практике.',
     ]
   },
   {
