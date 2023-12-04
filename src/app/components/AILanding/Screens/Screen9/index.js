@@ -3,6 +3,7 @@ import SectionContainer from '../../SectionContainer';
 import ContentContainer from '../../ContentContainer';
 import PageTitle from '../../PageTitle';
 import Paragraph from '../../Paragraph';
+import VerticalCards from '../../VerticalCards';
 
 const Screen9 = () => {
 
@@ -20,6 +21,7 @@ const Screen9 = () => {
             <li>и прочее.</li>
           </ul>
         </div>
+        <VerticalCards/>
       </ContentContainer>
     </SectionContainer>
   );

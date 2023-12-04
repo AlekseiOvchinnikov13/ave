@@ -35,6 +35,27 @@ $BACKGROUND_COLOR_RED_RIGHT: linear-gradient(93deg, #FFF 10.95%, #F00 83.23%);
 $BACKGROUND_COLOR_YELLOW: linear-gradient(90deg, #FF6B00 -1.25%, #FFE500 104.38%);
 $BACKGROUND_COLOR_YELLOW_RIGHT: linear-gradient(90deg, #FFE500 -1.25%, #FF6B00 65.56%);
 
+$BG_CARDS_COLOR_RED: linear-gradient(180deg, #000 -103.8%, #F00 77.06%);
+$BG_CARDS_COLOR_BLUE: linear-gradient(1deg, #277CC0 40.55%, #0E0200 189.01%);
+$BG_CARDS_COLOR_YELLOW: linear-gradient(180deg, #000 -103.8%, #FFF00D 77.06%);
+$BG_CARDS_COLOR_BLACK: linear-gradient(0deg, #000 49.09%, #000 195.28%);
+$BG_CARDS_COLOR_RED_LIGHT: linear-gradient(313deg, #000 -107.52%, #FF4C4C 83.71%);
+$BG_CARDS_COLOR_RED_BLUE: linear-gradient(72deg, #FF1C00 21.81%, #00D1FF 101.95%);
+
+$BG_CARDS_COLOR_WHITE1: linear-gradient(174deg, #FFF 35.55%, rgba(255, 255, 255, 0.00) 275.47%);
+$BG_CARDS_COLOR_WHITE2: linear-gradient(178deg, #E2E2E2 63.63%, #000 125.87%);
+$BG_CARDS_COLOR_WHITE3: linear-gradient(178deg, #E2E2E2 63.63%, rgba(255, 255, 255, 0.00) 125.87%);
+$BG_CARDS_COLOR_PINK: linear-gradient(148deg, #FF2CFB -79.17%, #384275 99.51%);
+
+$COLOR_DESCRIPTION_CARD_GREY1: #A6A6A6;
+$COLOR_DESCRIPTION_CARD_GREY2: #B7B7B7;
+$COLOR_DESCRIPTION_CARD_GREY3: #B5B5B5;
+$COLOR_DESCRIPTION_CARD_BLACK: #000;
+$COLOR_DESCRIPTION_CARD_WHITE: #fff;
+$COLOR_DESCRIPTION_CARD_GREY4: #C6C6C6;
+
+$COLOR_CLICK_TEXT_GREY_DARK: #484848;
+$COLOR_CLICK_TEXT_GREY_LIGHT: #B5B5B5;
 
 $COLOR_HIGHLIGHT_RED_LIGHT: #FF6C62;
 $COLOR_HIGHLIGHT_BLUE: #32C7E8;
@@ -46,15 +67,20 @@ $COLOR_HIGHLIGHT_GREEN: #CAFF31;
 $COLOR_HIGHLIGHT_RED: #F00;
 
 $FONTSIZE_220: min(.15277em); //, 220px
+$FONTSIZE_106: min(.07361em); //, 106px
 $FONTSIZE_104: min(.07291em); //, 104px
+$FONTSIZE_85: min(.05902em); //, 85px
 $FONTSIZE_84: min(.05833em); //, 84px
 $FONTSIZE_75: min(.05208em); //, 75px
+$FONTSIZE_62: min(.04305em); //, 62px
 $FONTSIZE_48: min(.03333em); //, 48px
+$FONTSIZE_42: min(.02916em); //, 42px
 $FONTSIZE_35: min(.02430em); //, 35px
 $FONTSIZE_25: min(.01736em); //, 25px
 $FONTSIZE_22: min(.01527em); //, 22px
 $FONTSIZE_20: min(.01388em); //, 20px
 $FONTSIZE_16: min(.01111em); //, 16px
+$FONTSIZE_14: min(.00972em); //, 14px
 
 $FONT_DRUK: 'Druk Cyr', sans-serif;
 $FONT_INPUTSANS: 'InputSansCompressed', sans-serif;
@@ -89,4 +115,30 @@ $FONT_INPUTSANS: 'InputSansCompressed', sans-serif;
   colorWhite: $COLOR_WHITE;
   colorWhite20: $COLOR_WHITE_20;
   colorGrey: $COLOR_GREY;
+  
+  bgCardsColorRed: $BG_CARDS_COLOR_RED;
+  bgCardsColorBlue: $BG_CARDS_COLOR_BLUE;
+  bgCardsColorYellow: $BG_CARDS_COLOR_YELLOW;
+  bgCardsColorBlack: $BG_CARDS_COLOR_BLACK;
+  bgCardsColorRedLight: $BG_CARDS_COLOR_RED_LIGHT;
+  bgCardsColorRedBlue: $BG_CARDS_COLOR_RED_BLUE;
+  
+  bgCardsColorWhite1: $BG_CARDS_COLOR_WHITE1;
+  bgCardsColorWhite2: $BG_CARDS_COLOR_WHITE2;
+  bgCardsColorWhite3: $BG_CARDS_COLOR_WHITE3;
+  bgCardsColorPink: $BG_CARDS_COLOR_PINK;
+  
+  colorDescriptionCardGrey1: $COLOR_DESCRIPTION_CARD_GREY1;
+  colorDescriptionCardGrey2: $COLOR_DESCRIPTION_CARD_GREY2;
+  colorDescriptionCardGrey3: $COLOR_DESCRIPTION_CARD_GREY3;
+  colorDescriptionCardBlack: $COLOR_DESCRIPTION_CARD_BLACK;
+  colorDescriptionCardWhite: $COLOR_DESCRIPTION_CARD_WHITE;
+  colorDescriptionCardGrey4: $COLOR_DESCRIPTION_CARD_GREY4;
+  
+  colorClickTextGreyDark: $COLOR_CLICK_TEXT_GREY_DARK;
+  colorClickTextGreyLight: $COLOR_CLICK_TEXT_GREY_LIGHT;
+  
+  fontsize106: $FONTSIZE_106;
+  fontsize85: $FONTSIZE_85;
+  fontsize62: $FONTSIZE_62;
 }

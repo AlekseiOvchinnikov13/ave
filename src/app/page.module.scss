@@ -1,12 +1,12 @@
 .main {
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: both mandatory;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.main section {
+.main section, .main article {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
