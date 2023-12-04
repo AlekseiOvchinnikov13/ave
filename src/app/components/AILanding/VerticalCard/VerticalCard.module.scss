@@ -1,23 +1,20 @@
 @import '../../../styles/variables.module';
 
-.wrapper + .wrapper {
+.wrapper:before {
+  min-height: 17%;
+}
+
+.wrapperButton:not(:first-child) {
   &:before {
-    content: '';
-    position: absolute;
-    width: 1px;
     min-height: 72%;
-    background-color: $COLOR_WHITE;
-    left: -.02083em;
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
-.wrapper {
+.wrapper, .wrapperButton {
   min-width: .28194em;
   min-height: .40833em;
   position: relative;
-  padding: .01041em .0208em .0118em;
+  padding: .01041em .0069em .0118em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +22,32 @@
   text-align: center;
   text-transform: uppercase;
   border: 2px solid $COLOR_WHITE;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: $COLOR_WHITE;
+    left: -.02083em;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.wrapperButton {
+  background-color: transparent;
+}
+
+.wrapperButtonExpand {
+  &:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $COLOR_BLACK_50;
+    backdrop-filter: blur(5px);
+  }
 }
 
 .clickText, .description, .subTitle {
@@ -35,7 +58,7 @@
   font-family: $FONT_DRUK;
 }
 
-.clickText {
+.clickText, .clickTextExpand {
   font-size: $FONTSIZE_14;
   font-weight: 500;
   position: relative;
@@ -53,8 +76,36 @@
   }
 }
 
-.logoWrapper {
+.clickTextExpand {
+  color: $COLOR_WHITE;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  
+  .triangle {
+    top: calc(100% + .357em);
+  }
+}
 
+.logoWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  .logo {
+    position: relative;
+    margin-right: .0034em;
+  }
+  
+  .text {
+    font-family: $FONT_DRUK;
+    font-size: $FONTSIZE_20;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }
 
 .textWrapper {
@@ -76,6 +127,32 @@
   font-weight: 500;
   color: $COLOR_WHITE;
   margin-top: .8571em;
+}
+
+.titles {
+  display: grid;
+  grid-template-columns: 1f;
+  place-items: center;
+}
+
+.titlesExtra {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  
+  .titleUp {
+    justify-self: flex-start;
+  }
+  
+  .titleLeft {
+    font-size: $FONTSIZE_182;
+    font-family: $FONT_DRUK;
+    font-weight: 500;
+    line-height: 83%;
+    text-transform: uppercase;
+    
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
 }
 
 .titleUp, .titleBottom {

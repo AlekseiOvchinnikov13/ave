@@ -3,6 +3,8 @@
 .container {
   display: grid;
   grid-template-columns: 3fr 4fr;
+  gap: 0 .02em;
+  padding-right: .00416em;
 }
 
 .description {
