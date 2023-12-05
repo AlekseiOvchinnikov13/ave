@@ -53,7 +53,7 @@ const Screen10 = () => {
             </h5>
             <div className={styles.description}>
               {activeSpeaker?.description?.map(p =>
-                <Paragraph>{p}</Paragraph>
+                <Paragraph key={uuid()}>{p}</Paragraph>
               )}
             </div>
           </div>
