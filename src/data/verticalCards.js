@@ -53,7 +53,7 @@ export const verticalCards = [
       backgroundSecondary: bgCardsColorRed
     },
     description: {
-      text: `Все подробности о&nbsp;курсе, что такое нейросети,и как правильно им&nbsp;обучаться`,
+      text: 'Все подробности о&nbsp;курсе, что такое нейросети,и как правильно им&nbsp;обучаться',
       color: colorDescriptionCardGrey1
     },
     isExpandable: true,
@@ -112,7 +112,7 @@ export const verticalCards = [
           backgroundSecondary: bgCard2Color3
         },
         description: {
-          text: `Чтобы улучшить свои результаты`,
+          text: 'Чтобы улучшить свои результаты',
           color: colorDescriptionCardGrey5
         }
       },
@@ -156,12 +156,12 @@ export const verticalCards = [
     clickTextColor: colorClickTextGreyDark,
     title: {
       up: 'Интенсив',
-      bottom: `из <span>стримов</span>`,
+      bottom: 'из <span>стримов</span>',
       backgroundPrimary: bgCardsColorWhite2,
       backgroundSecondary: bgCardsColorBlue
     },
     description: {
-      text: `покажем способы применения нейросетей с&nbsp;большим количеством примеров, как в&nbsp;теории, так и&nbsp;на&nbsp;практике`,
+      text: 'покажем способы применения нейросетей с&nbsp;большим количеством примеров, как в&nbsp;теории, так и&nbsp;на&nbsp;практике',
       color: colorDescriptionCardGrey2
     },
     isExpandable: true,
@@ -191,7 +191,7 @@ export const verticalCards = [
           backgroundLeft: bgCard4Color1
         },
         description: {
-          text: `демонстрация всех возможностей, которые мы&nbsp;нашли для улучшения собственных процессов`,
+          text: 'демонстрация всех возможностей, которые мы&nbsp;нашли для улучшения собственных процессов',
           color: colorDescriptionCardGrey5
         }
       },
@@ -263,7 +263,7 @@ export const verticalCards = [
       backgroundSecondary: bgCardsColorWhite3
     },
     description: {
-      text: `Подробные лекции по&nbsp;инструментам, которые можно смотреть в&nbsp;любом порядке`,
+      text: 'Подробные лекции по&nbsp;инструментам, которые можно смотреть в&nbsp;любом порядке',
       color: colorDescriptionCardGrey3
     },
     isExpandable: true,
@@ -293,7 +293,7 @@ export const verticalCards = [
           backgroundSecondary: bgCard7Color1
         },
         description: {
-          text: `альтернативы для слабооснащенных железом&nbsp;пк!`,
+          text: 'альтернативы для слабооснащенных железом&nbsp;пк!',
           color: colorDescriptionCardGrey6
         }
       },
@@ -321,7 +321,7 @@ export const verticalCards = [
           backgroundSecondary: bgCard8Color1
         },
         description: {
-          text: `объемныи пак из&nbsp;11&nbsp;лекций, полностью объясняющии принцип работы в&nbsp;данном инструменте`,
+          text: 'объемныи пак из&nbsp;11&nbsp;лекций, полностью объясняющии принцип работы в&nbsp;данном инструменте',
           color: colorDescriptionCardGrey7
         }
       },
@@ -379,7 +379,7 @@ export const verticalCards = [
           backgroundSecondary: bgCard10Color1
         },
         description: {
-          text: `лучшее дополнение к&nbsp;генеративным сетям`,
+          text: 'лучшее дополнение к&nbsp;генеративным сетям',
           color: colorDescriptionCardGrey9
         }
       }
@@ -401,7 +401,7 @@ export const verticalCards = [
       backgroundSecondary: bgCardsColorPink
     },
     description: {
-      text: `закроем появившиеся вопросы в&nbsp;процессе обучения`,
+      text: 'закроем появившиеся вопросы в&nbsp;процессе обучения',
       color: colorDescriptionCardBlack
     },
     isExpandable: true,
@@ -460,7 +460,7 @@ export const verticalCards = [
           backgroundSecondary: bgCard12Color1
         },
         description: {
-          text: `Проведем за&nbsp;руку от&nbsp;а&nbsp;до&nbsp;я`,
+          text: 'Проведем за&nbsp;руку от&nbsp;а&nbsp;до&nbsp;я',
           color: colorDescriptionCardYellow
         }
       }
@@ -491,7 +491,7 @@ export const verticalCards = [
       backgroundSecondary: bgCardsColorRedLight
     },
     description: {
-      text: `У&nbsp;нас нет домашних заданий, но&nbsp;есть серьезные предложения для тебя`,
+      text: 'У&nbsp;нас нет домашних заданий, но&nbsp;есть серьезные предложения для тебя',
       color: colorDescriptionCardWhite,
     }
   },
@@ -518,7 +518,7 @@ export const verticalCards = [
       backgroundSecondary: bgCardsColorRedBlue
     },
     description: {
-      text: `Доступ в&nbsp;закрытый telegram-канал, где мы&nbsp;продолжим делиться знаниями`,
+      text: 'Доступ в&nbsp;закрытый telegram-канал, где мы&nbsp;продолжим делиться знаниями',
       color: colorDescriptionCardGrey4,
     }
   }

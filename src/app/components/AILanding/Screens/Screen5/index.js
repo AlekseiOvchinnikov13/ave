@@ -24,7 +24,7 @@ const Screen5 = () => {
           <Paragraph innerHTML={`Теперь<strong> ты&nbsp;сможешь выбирать, когда тебе удобнее и&nbsp;быстрее применить в&nbsp;работе
             нейросети,</strong> когда&nbsp;&mdash; сделать снимок, а&nbsp;когда прибегнуть к&nbsp;помощи 3D.`}/>
           <Paragraph
-            innerHTML={`<strong>Это просто альтернативный инструмент, который можно и&nbsp;нужно миксовать с&nbsp;другими.</strong>`}/>
+            innerHTML={'<strong>Это просто альтернативный инструмент, который можно и&nbsp;нужно миксовать с&nbsp;другими.</strong>'}/>
         </div>
       </ContentContainer>
     </SectionContainer>
