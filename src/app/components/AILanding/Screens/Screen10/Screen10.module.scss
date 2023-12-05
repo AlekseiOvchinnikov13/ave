@@ -1,0 +1,11 @@
+@import '../../../../styles/variables.module';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.title {
+  grid-column: 1;
+  grid-row: 1;
+}

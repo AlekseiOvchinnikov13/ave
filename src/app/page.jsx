@@ -8,6 +8,7 @@ import Screen6 from './components/AILanding/Screens/Screen6';
 import Screen7 from './components/AILanding/Screens/Screen7';
 import Screen8 from './components/AILanding/Screens/Screen8';
 import Screen9 from './components/AILanding/Screens/Screen9';
+import Screen10 from './components/AILanding/Screens/Screen10';
 
 export default function AILanding() {
   return (
@@ -20,6 +21,7 @@ export default function AILanding() {
       <Screen7/>
       <Screen8/>
       <Screen9/>
+      <Screen10/>
     </main>
   );
 }

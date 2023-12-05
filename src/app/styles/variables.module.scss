@@ -15,6 +15,10 @@ $COLOR_WHITE_20: rgba(#fff, 0.20);
 $COLOR_YELLOW: #ECFF00;
 $COLOR_GREEN: #006C4B;
 $COLOR_PINK: #FF007A;
+$COLOR_RED: #B60000;
+$COLOR_PURPLE: #A830FF;
+$COLOR_CYAN: #A1F4FF;
+
 
 $BACKGROUND_COLOR_RED_LIGHT: linear-gradient(297deg, #FFF -15.57%, #FF0F00 101.61%);
 $BACKGROUND_COLOR_RED_LIGHT_RIGHT: linear-gradient(98deg, #FF3ED5 -91%, #FF5C00 130.15%);
@@ -161,6 +165,9 @@ $FONT_INPUTSANS: 'InputSansCompressed', sans-serif;
   colorGrey: $COLOR_GREY;
   colorGrey5: $COLOR_GREY5;
   colorGrey6: $COLOR_GREY6;
+  colorRed: $COLOR_RED;
+  colorPurple: $COLOR_PURPLE;
+  colorCyan: $COLOR_CYAN;
   
   bgCardsColorRed: $BG_CARDS_COLOR_RED;
   bgCardsColorBlue: $BG_CARDS_COLOR_BLUE;
