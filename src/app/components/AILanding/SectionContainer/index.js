@@ -1,11 +1,12 @@
 import styles from './SectionContainer.module.scss';
+import { forwardRef } from 'react';
 
-const SectionContainer = ({children, className}) => {
+const SectionContainer = forwardRef(({ children, className }, ref) => {
   return (
-    <section className={`${styles.section} ${className ? className : ''}`}>
+    <section className={`${styles.section} ${className || ''}`} ref={ref}>
       {children}
     </section>
   );
-};
+});
 
 export default SectionContainer;

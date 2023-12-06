@@ -19,9 +19,8 @@ const WordOfPain = ({word, rotate, className}) => {
       variants={jellyMotion}
       initial={{rotate: rotate}}
       whileHover="whileHover"
-    >
-      {word}
-    </motion.p>
+      dangerouslySetInnerHTML={{__html: word}}
+    />
   );
 };
 

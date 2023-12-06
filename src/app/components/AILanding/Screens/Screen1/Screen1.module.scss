@@ -24,8 +24,8 @@
 
 .content {
   display: grid;
-  grid-template-columns: .4375em .3361em;
-  gap: .02638em .06458em;
+  grid-template-columns: 1.75fr 2fr; //.4375em .3361em
+  gap: .00694em .06458em; //.02638em
 }
 
 .description {
@@ -34,7 +34,7 @@
   border: 2px solid $COLOR_WHITE;
   background: $COLOR_BLACK_40;
   box-shadow: -4px 4px 4px 0 $COLOR_BLACK_50;
-  padding: min(.0225em, 50px);
+  padding: .017em;
   
   h3, p {
     color: $COLOR_WHITE;
@@ -146,3 +146,16 @@
     }
   }
 }
+
+@media (max-width: 2000px) and (min-width: 1900px) {
+  .description {
+    margin-bottom: -.02em;
+  }
+}
+
+@media (max-width: 3900px) and (min-width: 3800px) {
+  .description {
+    margin-bottom: -.02em;
+  }
+}
+

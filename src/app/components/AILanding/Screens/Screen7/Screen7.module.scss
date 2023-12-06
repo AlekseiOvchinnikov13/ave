@@ -9,10 +9,11 @@
 
 .senshi {
   position: absolute;
-  width: .41319em;
-  height: .5875em;
+  width: 50vw; //.41319em;
+  height: 100vh;
+  //height: .64583em; //.5875em;
   left: 32%;
-  top: 10%;
+  top: 0;
 }
 
 .description {
@@ -30,7 +31,7 @@
     margin-bottom: -.375em;
     position: relative;
     z-index: 1;
-    padding: .75em;
+    padding: .5em;
     border: 2px solid $COLOR_BLACK;
     background: $COLOR_WHITE;
     box-shadow: -4px 4px 4px 0px $COLOR_BLACK_50;
@@ -47,7 +48,7 @@
     backdrop-filter: blur(5px);
     
     margin-top: 0;
-    padding: 2.25em;
+    padding: 2.25em 2.25em 1.25em;
   }
 }
 

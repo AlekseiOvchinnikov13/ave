@@ -24,9 +24,9 @@ const Screen2 = () => {
           <motion.div
             className={styles.chibikWrapper}
             initial={{y: -200}}
-            whileInView={{y: 0, rotate: 360}}
+            whileInView={{y: 0, x: 50, rotate: 360}}
             transition={{ease: 'easeInOut', duration: 1.2, type: 'spring'}}
-            // viewport={{once: true}}
+            viewport={{once: true}}
           >
             <Image
               src={Chibik}

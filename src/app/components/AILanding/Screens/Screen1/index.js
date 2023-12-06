@@ -1,7 +1,7 @@
 'use client';
 import styles from './Screen1.module.scss';
 import {AnimatePresence, motion} from 'framer-motion';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import Background from '../../Background';
 import BgScreen1 from '../../../../../../public/images/backgrounds/bg-screen1.jpg';
 import {Button} from 'antd';
@@ -13,7 +13,17 @@ import Paragraph from '../../Paragraph';
 
 const Screen1 = () => {
   const [isModalVisible, setIsModalVisible] = useState(true);
+
+  useEffect(() => {
+    if (document) {
+      document.body.style.overflowY = 'hidden';
+    }
+  }, []);
+
   const goHandle = () => {
+    if (document) {
+      document.body.style.overflowY = 'auto';
+    }
     setIsModalVisible(false);
   };
 
