@@ -5,8 +5,7 @@ import ContentContainer from '../../ContentContainer';
 import PageTitle from '../../PageTitle';
 import Paragraph from '../../Paragraph';
 import VerticalCards from '../../VerticalCards';
-import {useEffect, useRef} from 'react';
-import {motion, useTransform, useScroll} from 'framer-motion';
+// import {motion, useTransform, useScroll} from 'framer-motion';
 
 const Screen9 = () => {
 
