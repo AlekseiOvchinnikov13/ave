@@ -1,11 +1,8 @@
 import styles from './SectionContainer.module.scss';
 
-const SectionContainer = ({children, className}) => {
-  return (
-    <section className={`${styles.section} ${className || ''}`} ref={ref}>
-      {children}
-    </section>
-  );
-};
+const SectionContainer = ({children, className}) =>
+  <section className={`${styles.section} ${className || ''}`}>
+    {children}
+  </section>;
 
 export default SectionContainer;

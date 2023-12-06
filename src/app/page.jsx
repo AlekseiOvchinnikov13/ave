@@ -1,4 +1,3 @@
-'use client';
 import styles from './page.module.scss';
 import Screen1 from './components/AILanding/Screens/Screen1';
 import Screen2 from './components/AILanding/Screens/Screen2';
@@ -14,11 +13,11 @@ export default function AILanding() {
   return (
     <main className={styles.main}>
       <Screen1/>
-      <Screen2/>
+      {/*<Screen2/>*/}
       <Screen3/>
       <Screen5/>
       <Screen6/>
-      <Screen7/>
+      {/*<Screen7/>*/}
       <Screen8/>
       <Screen9/>
       <Screen10/>
